@@ -3,15 +3,7 @@
         {
             "text": "Home",
             "link": "/"
-        },
-        {
-            "text": "Services",
-            "link": "/services"
-        },
-        {
-            "text": "Our Team",
-            "link": "/our-team"
-        },
+        },        
         {
             "text": "About Us",
             "link": "/about"
@@ -23,14 +15,6 @@
         {
             "text": "Blogs",
             "link": "/blogs"
-        },
-        {
-            "text": "Clients",
-            "link": "/clients"
-        },
-        {
-            "text": "Career",
-            "link": "/career"
         }
     ],
     "services": [
