@@ -1,0 +1,195 @@
+{
+    "navLinks": [
+        {
+            "text": "Home",
+            "link": "/"
+        },
+        {
+            "text": "Services",
+            "link": "/services"
+        },
+        {
+            "text": "Our Team",
+            "link": "/our-team"
+        },
+        {
+            "text": "About Us",
+            "link": "/about"
+        },
+        {
+            "text": "Contact Us",
+            "link": "/contact-us"
+        },
+        {
+            "text": "Blogs",
+            "link": "/blogs"
+        },
+        {
+            "text": "Clients",
+            "link": "/clients"
+        },
+        {
+            "text": "Career",
+            "link": "/career"
+        }
+    ],
+    "services": [
+        {
+            "name": "GST Registration & Filing",
+            "text": "Complete GST registration process and monthly/quarterly filing for eCommerce sellers",
+            "highlights": [
+                "GST Registration",
+                "Monthly Returns",
+                "Input Tax Credit",
+                "Compliance Management"
+            ]
+        },
+        {
+            "name": "Bookkeeping & Accounting",
+            "text": "Professional bookkeeping services tailored for online marketplace sellers",
+            "highlights": [
+                "Daily Transactions",
+                "Bank Reconciliation",
+                "Financial Statements",
+                "Expense Tracking"
+            ]
+        },
+        {
+            "name": "Income Tax Returns",
+            "text": "Expert preparation and filing of income tax returns for individuals and businesses",
+            "highlights": [
+                "ITR Filing",
+                "Tax Planning",
+                "Advance Tax",
+                "TDS Returns"
+            ]
+        },
+        {
+            "name": "Marketplace Reconciliation",
+            "text": "Detailed reconciliation of sales data from Amazon, Flipkart, and other platforms",
+            "highlights": [
+                "Sales Reconciliation",
+                "Fee Analysis",
+                "Settlement Reports",
+                "Inventory Tracking"
+            ]
+        },
+        {
+            "name": "Payment Gateway Integration",
+            "text": "Setup and management of payment gateways with proper accounting integration",
+            "highlights": [
+                "Gateway Setup",
+                "Transaction Tracking",
+                "Settlement Analysis",
+                "Dispute Management"
+            ]
+        },
+        {
+            "name": "Business Registration",
+            "text": "Complete business setup including company registration and licensing",
+            "highlights": [
+                "Company Registration",
+                "Partnership Deeds",
+                "Trade Licenses",
+                "FSSAI Registration"
+            ]
+        },
+        {
+            "name": "Small Business",
+            "text": "",
+            "highlights": [
+                "Taxation",
+                "Business Consulting",
+                "Financial Consulting",
+                "Tax Preparation",
+                "Financial Analysis"
+            ]
+        }
+    ],
+    "banners": [
+        {
+            "heading": "Focus on Sales — We’ll Do the Books",
+            "text": "Focus on growing your online business while we handle your books, taxes, and compliance. Specialized services for Amazon, Flipkart, and other marketplace sellers.",
+            "highlights": [
+                "GST Registration & Filing",
+                "Marketplace Reconciliation",
+                "Income Tax Returns",
+                "Business Registration"
+            ],
+            "image": "/img/ecom-banner.png"
+        },
+        {
+            "heading": "✨ We are hiring!",
+            "text": "GPMJ & Associates, Indore, is looking for CA Interns to join our team. If you know someone who might be a good fit, your referrals would be highly appreciated.",
+            "highlights": [
+                "Join us as Article Assistants",
+                "Get hands-on exposure",
+                "Audit assignments across diverse industries",
+                "Direct taxation and GST compliance",
+                "Duration: Articleship as per ICAI requirements"
+            ],
+            "image": "/img/werhiring1.png"
+        }
+    ],
+    "OurTeam": [
+        {
+            "memberName": "Arpit Paliwal",
+            "description": "CA Arpit Paliwal, Partner at GPMJ & Associates, brings 14+ years of expertise in auditing, taxation, and startup advisory. He helps businesses scale through financial structuring, compliance, and strategic consulting.",
+            "image": "/img/ot/arpit.png"
+        },
+        {
+            "memberName": "Deepak Parekh",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
+            "image": "/img/ot/tm1.png"
+        },
+        {
+            "memberName": "Nirmala Sitharaman",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
+            "image": "/img/ot/tm2.png"
+        }
+    ],
+    "clients": [
+        {
+            "id": 1,
+            "name": "TechKart Solutions",
+            "industry": "eCommerce SaaS",
+            "logo": "/img/clients/c1.png",
+            "description": "Partnered for GST compliance, bookkeeping, and business registration."
+        },
+        {
+            "id": 2,
+            "name": "Urban Threads",
+            "industry": "Fashion Retail",
+            "logo": "/img/clients/c2.png",
+            "description": "Handled complete marketplace reconciliation and tax compliance."
+        },
+        {
+            "id": 3,
+            "name": "FitFuel Nutrition",
+            "industry": "Health & Nutrition",
+            "logo": "/img/clients/c3.png",
+            "description": "Supported with financial structuring, accounting, and GST management."
+        },
+        {
+            "id": 4,
+            "name": "ClickMart",
+            "industry": "Online Marketplace",
+            "logo": "/img/clients/c4.png",
+            "description": "End-to-end accounting and compliance solutions for multi-channel sales."
+        },
+        {
+            "id": 5,
+            "name": "Craftopia",
+            "industry": "Artisan Goods",
+            "logo": "/img/clients/c5.png",
+            "description": "Optimized tax filing and bookkeeping for a handmade goods startup."
+        },
+        {
+            "id": 6,
+            "name": "NeoPrint Media",
+            "industry": "Digital Marketing",
+            "logo": "/img/clients/c6.png",
+            "description": "Advised on company registration, invoicing automation, and tax filing."
+        }
+    ]
+}

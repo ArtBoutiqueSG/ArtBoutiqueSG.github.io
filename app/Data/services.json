@@ -1,0 +1,75 @@
+{
+  "services": [
+    {
+      "name": "GST Registration & Filing",
+      "text": "Our GST Registration & Filing service is designed to help eCommerce sellers stay fully compliant with Indian tax regulations. From registering your business under the Goods and Services Tax (GST) regime to managing monthly or quarterly return filings, we handle every step with accuracy and timeliness. We ensure proper input tax credit (ITC) reconciliation, maintain digital records for audit readiness, and assist with GST notices or mismatches. With our automated reminders and transparent process, you can avoid penalties, ensure compliance, and focus on growing your online business without worrying about tax complexities.",
+      "highlights": [
+        "GST Registration",
+        "Monthly Returns",
+        "Input Tax Credit",
+        "Compliance Management"
+      ]
+    },
+    {
+      "name": "Bookkeeping & Accounting",
+      "text": "Our Bookkeeping & Accounting services are tailored specifically for eCommerce and digital businesses. We record daily transactions, reconcile sales across marketplaces and bank statements, and prepare accurate financial reports to help you make data-driven decisions. Every sale, fee, and expense is categorized correctly for GST and income tax purposes. Our process ensures that your books are always audit-ready and reflect a true picture of your business performance. Whether you’re an Amazon seller or a growing D2C brand, our team ensures your finances stay organized, compliant, and scalable as your business expands.",
+      "highlights": [
+        "Daily Transactions",
+        "Bank Reconciliation",
+        "Financial Statements",
+        "Expense Tracking"
+      ]
+    },
+    {
+      "name": "Income Tax Returns",
+      "text": "We offer end-to-end assistance with Income Tax Return (ITR) filing for individuals, freelancers, and businesses engaged in eCommerce and service industries. Our team reviews your financial data to identify deductions, optimize tax liabilities, and ensure accurate reporting of income. From advance tax calculations to managing TDS and responding to notices, we handle the entire process seamlessly. We also offer tax planning advice to help you minimize future liabilities and comply with changing tax laws. With us, your returns are filed accurately and on time, reducing risks of penalties and audits.",
+      "highlights": [
+        "ITR Filing",
+        "Tax Planning",
+        "Advance Tax",
+        "TDS Returns"
+      ]
+    },
+    {
+      "name": "Marketplace Reconciliation",
+      "text": "Marketplace Reconciliation is a must for every eCommerce seller managing multiple platforms like Amazon, Flipkart, Meesho, or Myntra. Our service ensures that your sales reports, settlements, and payment data match perfectly with the actual transactions credited to your account. We analyze marketplace fees, commissions, returns, and refunds to identify discrepancies that could affect your margins. Our detailed reconciliation reports help you recover lost revenue and maintain financial accuracy. With our automation tools and expert oversight, you can trust your data to be 100% reliable and audit-ready.",
+      "highlights": [
+        "Sales Reconciliation",
+        "Fee Analysis",
+        "Settlement Reports",
+        "Inventory Tracking"
+      ]
+    },
+    {
+      "name": "Payment Gateway Integration",
+      "text": "Our Payment Gateway Integration service helps your business accept online payments efficiently and securely while keeping your accounting accurate. We integrate popular gateways such as Razorpay, Paytm, Cashfree, and Stripe into your systems, ensuring that every transaction is properly tracked and reflected in your financial records. We also assist with settlement reconciliation, dispute resolution, and performance analytics. Whether you operate a standalone website or sell across multiple channels, we make sure your payments are seamless, transparent, and fully aligned with your bookkeeping and GST compliance processes.",
+      "highlights": [
+        "Gateway Setup",
+        "Transaction Tracking",
+        "Settlement Analysis",
+        "Dispute Management"
+      ]
+    },
+    {
+      "name": "Business Registration",
+      "text": "Starting a business can be complex, but our Business Registration service simplifies the process from start to finish. Whether you’re forming a Private Limited Company, LLP, or sole proprietorship, we handle all legal and regulatory requirements including PAN, TAN, GST, and UDYAM registration. We also assist with trade licenses, partnership deeds, and FSSAI certification for food businesses. Our experts ensure compliance with ROC and MCA regulations so that your venture starts on the right legal footing. With transparent pricing and expert guidance, you can launch your business confidently and focus on growth.",
+      "highlights": [
+        "Company Registration",
+        "Partnership Deeds",
+        "Trade Licenses",
+        "FSSAI Registration"
+      ]
+    },
+    {
+      "name": "Small Business Advisory",
+      "text": "Our Small Business Advisory service provides end-to-end financial and strategic support for startups, MSMEs, and growing enterprises. We help entrepreneurs navigate taxation, financial planning, and regulatory compliance while building a scalable financial structure. From setting up accounting systems and optimizing cash flow to advising on funding and cost efficiency, our consultants act as your virtual CFO. We also guide you through GST and income tax complexities, ensuring that you remain compliant without burdening your operations. With insights derived from real business data, we help small businesses transform into sustainable, growth-oriented ventures.",
+      "highlights": [
+        "Taxation",
+        "Business Consulting",
+        "Financial Consulting",
+        "Tax Preparation",
+        "Financial Analysis"
+      ]
+    }
+  ]
+}

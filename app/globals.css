@@ -1,0 +1,179 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+
+/* ===============================
+   🌐 GLOBAL VARIABLES
+   =============================== */
+:root {
+  /* --- Base Theme (Blue & White: Default) --- */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #0d6efd;         /* Blue */
+  --secondary: #f8f9fa;       /* Light gray background */
+  --accent: #0056b3;          /* Darker blue for hover */
+  --muted: #6c757d;           /* Muted text */
+  --border-color: #dee2e6;
+
+  /* Text variants */
+  --text-light: #6c757d;
+  --text-dark: #212529;
+  --text-blue: #0d6efd;
+
+  /* Background variants */
+  --bg-light: #f8f9fa;
+  --bg-dark: #212529;
+  --bg-blue: #e7f1ff;
+
+  /* Highlight (Inver@import "tailwindcss";
+@import "tailwindcss/utilities";
+t or Contract style) */
+  --highlight-bg: var(--primary);
+  --highlight-text: #ffffff;
+}
+
+/* ===============================
+   🩶 THEME VARIANTS
+   =============================== */
+
+/* --- Theme 1: Default Blue & White --- */
+.theme-blue {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #0d6efd;
+  --accent: #0056b3;
+  --secondary: #f8f9fa;
+}
+
+/* --- Theme 2: Cool Gray --- */
+.theme-gray {
+  --background: #f5f6f7;
+  --foreground: #222222;
+  --primary: #495057;
+  --accent: #343a40;
+  --secondary: #e9ecef;
+}
+
+/* --- Theme 3: Warm Neh! That makes perfect sense—what you’re seeing is very typical with Next.js static export + Tailwind + Google Fonts. The HTML is there (Navbar/Footer), but CSS isn’t applied because the CSS/Font pipeline isn’t recognized properly after the rebuild. Let’s fix this systematically.
+
+utral --- */
+.theme-warm {
+  --background: #fcfbf7;
+  --foreground: #2b2b2b;
+  --primary: #3b82f6;       /* Muted blue */
+  --accent: #2563eb;
+  --secondary: #f3f4f6;
+}
+
+/* ===============================
+   🌗 DARK MODE (optional)
+   =============================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #f5f5f5;
+    --secondary: #1c1c1c;
+  }
+}
+
+/* ===============================
+   🧱 BASE ELEMENTS
+   =============================== */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+h1 { font-size: 2rem; padding-bottom: 0.3rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; color: var(--text-blue); }
+
+p { margin-bottom: 1rem; }
+
+/* ===============================
+   🎨 BUTTONS
+   =============================== */
+button {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Button Types */
+button.ok {
+  background: var(--primary);
+  color: white;
+}
+button.ok:hover {
+  background: var(--accent);
+}
+
+button.cancel {
+  background: #dee2e6;
+  color: #000;
+}
+button.cancel:hover {
+  background: #cbd3da;
+}
+
+button.submit {
+  background: #007bff;
+  color: white;
+}
+button.submit:hover {
+  background: #0056b3;
+}
+
+button.success {
+  background: #198754;
+  color: white;
+}
+button.success:hover {
+  background: #157347;
+}
+
+/* ===============================
+   ✨ HIGHLIGHT CLASS
+   =============================== */
+.highlight {
+  background: var(--highlight-bg);
+  color: var(--highlight-text);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/* ===============================
+   🧭 UTILITY CLASSES
+   =============================== */
+.bg-light { background-color: var(--bg-light); }
+.bg-dark { background-color: var(--bg-dark); color: #fff; }
+.bg-blue { background-color: var(--bg-blue); }
+
+.text-light { color: var(--text-light); }
+.text-dark { color: var(--text-dark); }
+.text-blue { color: var(--text-blue); }

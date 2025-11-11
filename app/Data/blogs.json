@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Understanding eCommerce Accounting: A Complete Guide for Online Sellers",
+      "slug": "understanding-ecommerce-accounting",
+      "date": "2025-10-15",
+      "author": "Team Ledgerly",
+      "image": "/img/blogs/1.png",
+      "excerpt": "Learn how to manage accounting for your eCommerce business — from tracking sales across multiple platforms to reconciling payment gateways efficiently.",
+      "content": "Accounting for eCommerce sellers goes beyond basic bookkeeping. With multiple marketplaces, payment gateways, and returns, maintaining accurate books requires a structured approach. Start by automating sales data imports, categorizing marketplace fees, and regularly reconciling bank statements. Cloud-based accounting tools integrated with Amazon, Flipkart, or Shopify can help you minimize manual effort while ensuring compliance."
+    },
+    {
+      "id": 2,
+      "title": "GST and Taxation for eCommerce Sellers: What You Must Know",
+      "slug": "gst-taxation-ecommerce-sellers",
+      "date": "2025-11-01",
+      "author": "CA Ananya Sharma",
+      "image": "/img/blogs/2.png",
+      "excerpt": "A simplified breakdown of GST registration, filing, and compliance for eCommerce sellers on platforms like Amazon and Flipkart.",
+      "content": "Under India’s GST framework, eCommerce sellers face unique compliance requirements. Marketplaces are required to collect TCS (Tax Collected at Source), which must be claimed by sellers in their GST returns. To stay compliant, ensure timely reconciliation of TCS credits, regular filing of GSTR-1 and GSTR-3B, and accurate mapping of outward supplies. Proper record-keeping also helps avoid penalties and eases annual return filing."
+    },
+    {
+      "id": 3,
+      "title": "Marketplace Reconciliation Made Simple: Avoid Revenue Leakage",
+      "slug": "marketplace-reconciliation-made-simple",
+      "date": "2025-11-08",
+      "author": "Rohan Patel",
+      "image": "/img/blogs/3.png",
+      "excerpt": "Discover how automated reconciliation can help eCommerce businesses recover lost revenue and ensure accurate reporting.",
+      "content": "Marketplace reconciliation ensures that your sales, returns, and commissions reported by platforms like Amazon or Meesho match your own records. Discrepancies often arise due to delayed settlements, unaccounted returns, or incorrect commission charges. By using reconciliation software or structured Excel checks, you can detect mismatches early, claim missing payments, and maintain trust in your financial data."
+    }
+  ]
+}
