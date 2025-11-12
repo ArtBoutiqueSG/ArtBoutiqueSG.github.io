@@ -6,6 +6,7 @@ export type Product = {
   image2: string;
   image3: string;
   category: string;
+  newArrival:boolean;
 };
 
 export type Category={

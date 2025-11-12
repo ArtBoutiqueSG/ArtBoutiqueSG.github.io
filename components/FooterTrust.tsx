@@ -81,7 +81,7 @@ export default function FooterTrust() {
         </div>
 
         <div className="mt-10 text-sm text-blue-100 text-center">
-          © {new Date().getFullYear()} Art Boutique SG | A unique collection of specially designed, hand curated art pieces. All Rights Reserved.
+          © 2025 Art Boutique SG | A unique collection of specially designed, hand curated art pieces. All Rights Reserved.
         </div>
       </div>
     </footer>

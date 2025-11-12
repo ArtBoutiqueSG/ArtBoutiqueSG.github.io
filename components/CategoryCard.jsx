@@ -5,7 +5,7 @@ import { toSlug } from "../utils/slug";
 export default function CategoryCard({ category, products }) {
   if (!products || products.length === 0) return null;
 
-  const driveURL = "https://artboutiquesg.github.io/static/img/thumbnail/";
+  
   const firstProduct = products[0]; // use static first product for SSG / SEO
 
   // Highlight if the first product is a new arrival
@@ -22,11 +22,7 @@ export default function CategoryCard({ category, products }) {
       <div
         className={`rounded-2xl flex flex-col h-full bg-card text-primary ${cardHighlightClass}`}
       >
-        {/* Category Name */}
-        <h4 className="text-center">
-          {category}
-        </h4>
-
+        
         {/* Static image area */}
         <div className="relative w-full overflow-hidden flex-grow pt-[100%]">
           {firstProduct.newArrival && (
@@ -45,19 +41,15 @@ export default function CategoryCard({ category, products }) {
           <img
             src={`/img/products/${firstProduct.image1}`}
             alt={firstProduct.name}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover rounded-t-2xl"
             loading="eager"
             title={firstProduct.name}
           />
         </div>
-
-        {/* Static info */}
-        <div className="p-3">
-          <div className="flex justify-between text-normal text-sm">
-            
-            
-          </div>
-        </div>
+{/* Category Name */}
+        <h2 className="text-center">
+          {category}
+        </h2>       
       </div>
     </Link>
   );

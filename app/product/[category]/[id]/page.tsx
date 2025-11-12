@@ -138,7 +138,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
       <div className="grid md:grid-cols-2 gap-6 mt-4">
         {/* ✅ Client-side gallery */}
-        <ProductGallery product={product} driveURL="" />
+        <ProductGallery product={product}  />
 
         {/* ✅ Product Details */}
         <div className="p-2">

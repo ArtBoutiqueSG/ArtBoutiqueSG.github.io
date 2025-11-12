@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {toSlug} from "../utils/slug"
 export default function ProductCard({ product }) {
-  const driveURL = "https://artboutiquesg.github.io/static/img/thumbnail/";
+  
 
   const cardHighlightClass = product.newArrival
     ? "border-2 border-accent shadow-md hover:shadow-xl bg-accent text-primary"

@@ -51,7 +51,8 @@
             "image1": "pgh1.png",
             "image2": "pgh2.png",
             "image3": "pgh3.png",
-            "category": "Gift Hampers"
+            "category": "Gift Hampers",
+            "newArrival":false
         },
         {
             "id": 2,
@@ -60,7 +61,8 @@
             "image1": "",
             "image2": "",
             "image3": "",
-            "category": ""
+            "category": "",
+            "newArrival":false
         },
         {
             "id": 3,
@@ -69,7 +71,8 @@
             "image1": "dd1.png",
             "image2": "dd2.png",
             "image3": "dd3.png",
-            "category": "Decor"
+            "category": "Decor",
+            "newArrival":false
         },
         {
             "id": 4,
@@ -78,7 +81,8 @@
             "image1": "ltjc1.png",
             "image2": "ltjc2.png",
             "image3": "ltjc3.png",
-            "category": "Candles"
+            "category": "Candles",
+            "newArrival":false
         },
         {
             "id": 5,
@@ -87,7 +91,8 @@
             "image1": "tlh.png",
             "image2": "",
             "image3": "",
-            "category": "Diwali Gifts"
+            "category": "Diwali Gifts",
+            "newArrival":true
         },
         {
             "id": 6,
@@ -96,7 +101,8 @@
             "image1": "ltlh1.png",
             "image2": "ltlh2.png",
             "image3": "ltlh3.png",
-            "category": "Diwali Gifts"
+            "category": "Diwali Gifts",
+            "newArrival":false
         },
         {
             "id": 7,
@@ -105,7 +111,8 @@
             "image1": "bgcs.png",
             "image2": "",
             "image3": "",
-            "category": "Coasters"
+            "category": "Coasters",
+            "newArrival":false
         },
         {
             "id": 8,
@@ -114,7 +121,8 @@
             "image1": "pp1.png",
             "image2": "pp2.png",
             "image3": "pp3.png",
-            "category": "Trays"
+            "category": "Trays",
+            "newArrival":false
         },
         {
             "id": 9,
@@ -123,7 +131,8 @@
             "image1": "r1.png",
             "image2": "",
             "image3": "",
-            "category": "Rakhis"
+            "category": "Rakhis",
+            "newArrival":false
         },
         {
             "id": 10,
@@ -132,7 +141,8 @@
             "image1": "pf1.png",
             "image2": "pf2.png",
             "image3": "pf2png",
-            "category": "Photo Frames"
+            "category": "Photo Frames",
+            "newArrival":false
         }
     ],"categories": [
     {
