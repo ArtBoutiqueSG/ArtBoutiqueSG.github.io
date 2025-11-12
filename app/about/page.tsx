@@ -12,7 +12,7 @@ const aboutData = {
     heading: "About Our Handcrafted Resin Studio",
     subheading:
       "Turning ideas into timeless handcrafted art — one resin piece at a time.",
-    image: "/img/about-hero1.png", // optional hero image
+    image: "/img/about-hero1.png",
   },
   story: {
     title: "Our Story",
@@ -94,7 +94,7 @@ const aboutData = {
   
   From humble beginnings crafting custom decor for friends, to now leading a boutique brand loved for its originality, 
   Sheetal’s work is a reflection of passion, patience, and the joy of creating beauty by hand.`,
-    image: "/img/sheetal-jain.png", // path to her photo
+    image: "/img/sheetal-jain.png",
   },
 };
 
@@ -111,17 +111,19 @@ export default function AboutPage() {
         <link rel="canonical" href="https://yourdomain.com/about" />
       </Head>
 
-      <main className="theme-rose bg-light min-h-screen py-12 px-6 md:px-20">
+      <main className="theme-rose bg-light min-h-screen py-12 px-4 sm:px-6 md:px-20 overflow-x-hidden">
         {/* HERO SECTION */}
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold text-accent mb-4">{hero.heading}</h1>
           <p className="text-lg text-dark mb-6">{hero.subheading}</p>
           {hero.image && (
-            <img
-              src={hero.image}
-              alt="About our handcrafted resin products"
-              className="mx-auto rounded-2xl shadow-md max-w-xl"
-            />
+            <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-md">
+              <img
+                src={hero.image}
+                alt="About our handcrafted resin products"
+                className="w-full h-auto object-contain block"
+              />
+            </div>
           )}
         </section>
 
@@ -134,16 +136,19 @@ export default function AboutPage() {
             {story.content}
           </p>
         </section>
+
         {/* ARTIST SECTION */}
         <section className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 mb-16">
-          <div className="md:w-1/3">
-            <img
-              src={artist.image}
-              alt={`Portrait of ${artist.name}`}
-              className="rounded-2xl shadow-lg w-full object-cover"
-            />
+          <div className="w-full md:w-1/3 flex justify-center">
+            <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-none overflow-hidden rounded-2xl shadow-lg">
+              <img
+                src={artist.image}
+                alt={`Portrait of ${artist.name}`}
+                className="w-full h-auto object-contain block"
+              />
+            </div>
           </div>
-          <div className="md:w-2/3">
+          <div className="w-full md:w-2/3">
             <h2 className="text-2xl font-semibold mb-2 text-accent">
               Meet the Artist — {artist.name}
             </h2>

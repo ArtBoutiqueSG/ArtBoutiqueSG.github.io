@@ -23,9 +23,9 @@ export default function CategoryCard({ category, products }) {
         className={`rounded-2xl flex flex-col h-full bg-card text-primary ${cardHighlightClass}`}
       >
         {/* Category Name */}
-        <h2 className="text-center">
+        <h4 className="text-center">
           {category}
-        </h2>
+        </h4>
 
         {/* Static image area */}
         <div className="relative w-full overflow-hidden flex-grow pt-[100%]">

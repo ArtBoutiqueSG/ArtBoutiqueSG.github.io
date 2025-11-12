@@ -1,121 +1,140 @@
 import type { Product, Category } from "@/app/Data/types";
 import data from "@/app/Data/catalog.json";
 import ProductCard from "@/components/ProductCard";
-
 import { toSlug } from "@/utils/slug";
 import { notFound } from "next/navigation";
 
-//const data = dataRaw as CatalogData;
 const baseURL = "https://artboutiquesg.github.io";
 
 interface CategoryPageProps {
-    params: {
-        category: string;
-    };
+  params: {
+    category: string;
+  };
 }
 
-let ldjson = {};
-// ---- STATIC PARAM GENERATION ----
+// ---------- STATIC PARAM GENERATION ----------
 export async function generateStaticParams() {
-    return data.categories.map((cat: Category) => ({
-        category: (toSlug(cat.name)),
-    }));
+  return data.categories.map((cat: Category) => ({
+    category: toSlug(cat.name),
+  }));
 }
 
-// ---- METADATA ----
+// ---------- METADATA ----------
 export async function generateMetadata({ params }: CategoryPageProps) {
-    const { category: slug } = await params;
-    
-    const category = data.categories.find(
-        (cat) => toSlug(cat.name) === slug
-    );
-    if (!category) return {};
+  const { category: slug } = params;
+  const category = data.categories.find((cat) => toSlug(cat.name) === slug);
+  if (!category) return {};
 
-    const filtered = data.products.filter(p => p.category == category.name);
+  const filtered = data.products.filter((p) => p.category === category.name);
 
-    const title = `${category.name} by Art Boutique SG`;
-    const description = `Explore ${filtered.length} ${category} at Art Boutique SG Nagda Junction. High-quality gold & silver jewelry with BIS 916 certified gold.`;
+  const title = `${category.name} | Art Boutique SG`;
+  const description = `Discover our curated collection of handcrafted ${category.name} — made with resin artistry, custom designs, and aesthetic detailing.`;
+  const imageUrl =
+    filtered.length > 0 ? `/img/${filtered[0].image1}` : `/img/logo.png`;
 
-    const imageUrl =
-        filtered.length > 0
-            ? `/img/${filtered[0].image1}`
-            : `/logo.png`;
+  const keywords = [
+    "Art Boutique SG",
+    "Resin Art",
+    "Handcrafted Gifts",
+    category.name,
+    ...filtered.slice(0, 8).map((p: Product) => p.name),
+  ];
 
-    const keywords =
-        filtered.length > 0
-            ? [category, ...filtered.slice(0, 10).map((p: Product) => p.name)].join(", ")
-            : category;
+  const ldjson = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${category.name} | Art Boutique SG`,
+    description,
+    url: `${baseURL}/category/${slug}`,
+    mainEntity: filtered.map((p: Product) => ({
+      "@type": "Product",
+      name: p.name,
+      image: `${baseURL}/img/${p.image1}`,
+      url: `${baseURL}/product/${toSlug(p.category)}/${p.id}`,
+    })),
+  };
 
-    ldjson = {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        name: `${category} by `,
-        description,
-        url: `${baseURL}/category/${slug}`,
-        mainEntity: filtered.map((p: Product) => ({
-            "@type": "Product",
-            name: p.name,
-            image: `/img/${p.image1}`,
-            url: `${baseURL}/product/${p.category}/${p.id}`,
-        })),
-    };
-
-    return {
-        title,
-        description,
-        keywords,
-        openGraph: {
-            title,
-            description,
-            url: `${baseURL}/category/${slug}`,
-            images: [{ url: imageUrl }],
-        },
-        twitter: {
-            card: "summary_large_image",
-            title,
-            description,
-            images: [imageUrl],
-        },
-        alternates: {
-            canonical: `${baseURL}/category/${slug}`,
-        },
-    };
+  return {
+    title,
+    description,
+    keywords,
+    openGraph: {
+      title,
+      description,
+      url: `${baseURL}/category/${slug}`,
+      images: [{ url: imageUrl }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [imageUrl],
+    },
+    alternates: {
+      canonical: `${baseURL}/category/${slug}`,
+    },
+    other: {
+      ldjson: JSON.stringify(ldjson),
+    },
+  };
 }
 
-// ---- MAIN PAGE ----
-export default async function CategoryPage({ params }: CategoryPageProps) { // ✅ make it async
-    const { category: slug } = await params; // ✅ no await needed here either   
-    
-    const category = data.categories.find(
-        (cat) => toSlug(cat.name) === slug
-    );
+// ---------- MAIN PAGE ----------
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { category: slug } = await params;
 
-    if (!category) notFound();
+  const category = data.categories.find((cat) => toSlug(cat.name) === slug);
+  if (!category) notFound();
 
-    const filtered = data.products.filter(p => p.category == category.name);
+  const filtered = data.products.filter((p) => p.category === category.name);
 
-    return (
-        <div className="space-y-6 max-w-6xl mx-auto">
-            {/* ✅ JSON-LD Structured Data */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(ldjson) }}
-            />
-            <h1 className="text-xl md:text-2xl">{category.name}</h1>
-            <p className="text-sm text-muted-foreground mb-4">
-                Explore our exclusive collection of {category.name} at Art Boutique SG
-                Nagda. High-quality gold & silver jewellery with BIS 916 certification.
-            </p>
+  const ldjson = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${category.name} | Art Boutique SG`,
+    description: `Explore handcrafted ${category.name} by Art Boutique SG.`,
+    url: `${baseURL}/category/${slug}`,
+    mainEntity: filtered.map((p: Product) => ({
+      "@type": "Product",
+      name: p.name,
+      image: `${baseURL}/img/${p.image1}`,
+      url: `${baseURL}/product/${toSlug(p.category)}/${p.id}`,
+    })),
+  };
 
-            {filtered.length === 0 ? (
-                <p>No product found in this category</p>
-            ) : (
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {filtered.map((p: Product) => (
-                        <ProductCard key={p.id} product={p} />
-                    ))}
-                </div>
-            )}
-        </div>
-    );
+  return (
+    <main className="theme-rose bg-light min-h-screen pt-24 px-4 sm:px-6 md:px-20 pb-12 overflow-x-hidden">
+      {/* SEO STRUCTURED DATA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ldjson) }}
+      />
+
+      {/* CATEGORY HEADER */}
+      <header className="max-w-6xl mx-auto mb-10 text-center">
+        <h1 className="text-xl font-bold text-accent mb-3">
+          {category.name}
+        </h1>
+        <p className="text-dark text-base max-w-2xl mx-auto">
+          Discover our unique {category.name} — handcrafted with care, designed
+          to make every moment feel personal and special.
+        </p>
+      </header>
+
+      {/* PRODUCT GRID */}
+      <section className="max-w-6xl mx-auto">
+        {filtered.length === 0 ? (
+          <p className="text-center text-light mt-8">
+            No products found in this category.
+          </p>
+        ) : (
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            {filtered.map((product: Product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        )}
+      </section>
+    </main>
+  );
 }
