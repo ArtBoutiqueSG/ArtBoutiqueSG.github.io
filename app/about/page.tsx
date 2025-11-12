@@ -111,7 +111,7 @@ export default function AboutPage() {
         <link rel="canonical" href="https://yourdomain.com/about" />
       </Head>
 
-      <main className="theme-rose bg-light min-h-screen py-12 px-4 sm:px-6 md:px-20 overflow-x-hidden">
+      <main className="theme-rose bg-light min-h-screen py-18 px-4 sm:px-6 md:px-24 overflow-x-hidden">
         {/* HERO SECTION */}
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold text-accent mb-4">{hero.heading}</h1>

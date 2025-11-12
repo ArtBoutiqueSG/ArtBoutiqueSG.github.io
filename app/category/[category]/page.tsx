@@ -3,6 +3,7 @@ import data from "@/app/Data/catalog.json";
 import ProductCard from "@/components/ProductCard";
 import { toSlug } from "@/utils/slug";
 import { notFound } from "next/navigation";
+import Breadcrumb from "@/components/BreadcrumbItem";
 
 const baseURL = "https://artboutiquesg.github.io";
 
@@ -103,13 +104,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   };
 
   return (
-    <main className="theme-rose bg-light min-h-screen pt-24 px-4 sm:px-6 md:px-20 pb-12 overflow-x-hidden">
+    <main className="theme-rose bg-light min-h-screen pt-18 px-4 sm:px-6 md:px-20 pb-12 overflow-x-hidden">
+
       {/* SEO STRUCTURED DATA */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ldjson) }}
       />
 
+<Breadcrumb items={[{ name: "Home", href: "/" }, { name: category.name }]} />
       {/* CATEGORY HEADER */}
       <header className="max-w-6xl mx-auto mb-10 text-center">
         <h1 className="text-xl font-bold text-accent mb-3">

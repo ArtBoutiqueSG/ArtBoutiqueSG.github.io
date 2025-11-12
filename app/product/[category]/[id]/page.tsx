@@ -13,6 +13,7 @@ import {
   FaInstagram,
   FaShareAlt,
 } from "react-icons/fa";
+import Breadcrumb from "@/components/BreadcrumbItem";
 
 
 const baseURL = "https://artboutiquesg.github.io";
@@ -29,8 +30,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(
   props: { params: Promise<{ category: string; id: string }> }
-): Promise<Metadata> {  
-  const { category: categorySlug, id } = await props.params;  
+): Promise<Metadata> {
+  const { category: categorySlug, id } = await props.params;
 
   const product = data.products.find(
     (p: Product) => p.id.toString() === id
@@ -46,7 +47,7 @@ export async function generateMetadata(
   const description = `Explore ${product.name} ${product.description}`;
   const imageUrl = `${driveURL}${product.image1}`;
   const keywords = [
-    product.name,    
+    product.name,
     product.category,
     product.description,
   ].join(", ");
@@ -75,7 +76,7 @@ export async function generateMetadata(
 }
 
 export default async function ProductDetailPage({ params }: { params: Promise<{ category: string; id: string }> }) {
-  const { category: categorySlug, id } = await params;  
+  const { category: categorySlug, id } = await params;
   // Find product within that category
   const product = data.products.find(
     (p: Product) => p.id.toString() === id.toString()
@@ -117,13 +118,22 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     },
   };
 
+  const contactInfo = {
+    whatsapp: "+65 8797 5001",
+    email: "artboutiquesg@gmail.com",
+    address: "9 punggol field walk, flo residences, Singapore, 828743",
+    hours: "Mon – Sat: 10:00 AM – 7:00 PM",
+  };
+
+
   return (
 
-    <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-6 py-6 px-3">
+    <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-6 py-6 px-3 mt-18">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ldjson) }}
       />
+      <Breadcrumb items={[{ name: "Home", href: "/" }, { name: product.category, href:`/category/${toSlug(product.category)}` },{name:product.name}]} />
       {/* ✅ Client-side gallery */}
       <ProductGallery product={product} driveURL="" />
 
@@ -131,34 +141,25 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
       <div className="p-2">
         <h1 className="text-2xl md:text-3xl mb-2">{product.name}</h1>
 
-        
-
-        {/* Contact */}
-        <div className="flex items-center gap-4 mb-4">
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-4xl md:text-5xl !text-green-500 hover:text-green-600 transition-transform hover:scale-110"
-          >
-            <FaWhatsapp />
-          </a>
-          <span>
-            अधिक जानकारी के लिए{" "}
-            <a href="tel:8234042231" className="underline font-medium">
-              8234042231
-            </a>{" "}
-            पर संपर्क करें...
-          </span>
-        </div>
-
         {/* Highlights */}
-        
-          <p className="list-disc list-inside space-y-1 mb-4">
-            {product.description}        
-           
-          </p>
-        
+        <p className="list-disc list-inside space-y-1 mb-4">
+          {product.description}
+        </p>
+
+        <strong>💬 WhatsApp:</strong>{" "}
+        <a
+          href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent hover:underline"
+          itemProp="telephone"
+        >
+          {contactInfo.whatsapp}
+        </a>
+       
+
+
+
 
         {/* Share */}
         <div className="border-t pt-4 mt-4">
