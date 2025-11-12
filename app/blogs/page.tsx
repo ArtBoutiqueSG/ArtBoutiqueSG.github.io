@@ -2,16 +2,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import blogsData from "@/app/Data/blogs.json";
+import {Blog} from "@/app/Data/types"
 
-interface Blog {
-  id: number;
-  title: string;
-  slug: string;
-  date: string;
-  author: string;
-  image: string;
-  excerpt: string;
-}
 
 export const metadata: Metadata = {
   title: "Blogs | Handcrafted Art, Resin Stories & Design Inspiration",

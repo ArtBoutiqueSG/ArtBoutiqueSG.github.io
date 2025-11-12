@@ -13,3 +13,12 @@ export type Category={
   name:string;
   rank:number
 }
+export interface Blog {
+  id: number;
+  title: string;
+  slug: string;
+  date: string;
+  author: string;
+  image: string;
+  excerpt: string;
+}

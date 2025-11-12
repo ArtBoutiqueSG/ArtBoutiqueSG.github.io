@@ -22,9 +22,11 @@ export async function generateStaticParams() {
 
 // ---------- METADATA ----------
 export async function generateMetadata({ params }: CategoryPageProps) {
+  // ✅ Do NOT await params — it’s always a plain object here
   const { category: slug } = params;
+
   const category = data.categories.find((cat) => toSlug(cat.name) === slug);
-  if (!category) return {};
+  if (!category) return null; // ✅ null, not {}
 
   const filtered = data.products.filter((p) => p.category === category.name);
 
@@ -41,10 +43,11 @@ export async function generateMetadata({ params }: CategoryPageProps) {
     ...filtered.slice(0, 8).map((p: Product) => p.name),
   ];
 
+  // ✅ JSON-LD must be injected manually for static export
   const ldjson = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: `${category.name} | Art Boutique SG`,
+    name: title,
     description,
     url: `${baseURL}/category/${slug}`,
     mainEntity: filtered.map((p: Product) => ({
@@ -74,12 +77,8 @@ export async function generateMetadata({ params }: CategoryPageProps) {
     alternates: {
       canonical: `${baseURL}/category/${slug}`,
     },
-    other: {
-      ldjson: JSON.stringify(ldjson),
-    },
   };
 }
-
 // ---------- MAIN PAGE ----------
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { category: slug } = await params;
