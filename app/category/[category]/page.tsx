@@ -5,7 +5,7 @@ import { toSlug } from "@/utils/slug";
 import { notFound } from "next/navigation";
 import Breadcrumb from "@/components/BreadcrumbItem";
 
-const baseURL = "https://artboutiquesg.github.io";
+const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 
 interface CategoryPageProps {
   params: {
@@ -21,9 +21,11 @@ export async function generateStaticParams() {
 }
 
 // ---------- METADATA ----------
-export async function generateMetadata({ params }: CategoryPageProps) {
+export async function generateMetadata(
+  { params }: { params: Promise<{ category: string }> } | { params: { category: string } }
+) {
   // ✅ Do NOT await params — it’s always a plain object here
-  const { category: slug } = params;
+  const { category: slug } = await params;
 
   const category = data.categories.find((cat) => toSlug(cat.name) === slug);
   if (!category) return null; // ✅ null, not {}
@@ -111,7 +113,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ldjson) }}
       />
 
-<Breadcrumb items={[{ name: "Home", href: "/" }, { name: category.name }]} />
+      <Breadcrumb items={[{ name: "Home", href: "/" }, { name: category.name }]} />
       {/* CATEGORY HEADER */}
       <header className="max-w-6xl mx-auto mb-10 text-center">
         <h1 className="text-xl font-bold text-accent mb-3">

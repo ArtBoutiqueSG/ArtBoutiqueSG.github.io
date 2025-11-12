@@ -21,6 +21,7 @@ const geistMono = Geist_Mono({
    🧠 SEO Metadata
 --------------------------------*/
 export const metadata: Metadata = {
+  metadataBase: new URL("https://artboutiquesg.github.io"),
   title: "Art Boutique SG | A unique collection of specially designed, hand curated art pieces",
   description:
     "ArtboutiqueSG is a unique collection of specially designed, hand curated art pieces, photo frame, resin crafts, rakhis, hand picked jewellery pieces",

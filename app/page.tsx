@@ -3,7 +3,9 @@ import CategoryCard from "@/components/CategoryCard";
 import data from "@/app/Data/catalog.json";
 import { Metadata } from "next";
 
+
 export const metadata: Metadata = {
+  
   title: "Art Boutique SG | Handcrafted Resin Gifts & Home Decor",
   description:
     "Discover handcrafted resin gifts, personalized hampers, and custom decor made with artistic precision at Art Boutique SG. Each piece is designed to bring beauty, emotion, and individuality to your space.",
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     url: "https://artboutiquesg.com",
     images: [
       {
-        url: "/static/img/about-hero.png",
+        url: "/img/about-hero.png",
         width: 1200,
         height: 630,
         alt: "Art Boutique SG handcrafted resin decor",
