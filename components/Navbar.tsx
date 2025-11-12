@@ -1,18 +1,18 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import navData from "@/app/Data/data.json";
+import navData from "@/app/Data/catalog.json";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navLinks = navData.navLinks;
 
   return (
-    <nav className="bg-white border-b border-gray-200 shadow-sm">
+    <nav className="border-b  shadow-sm">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo / Firm Name */}
-        <div className="text-xl font-bold text-blue-700 tracking-wide">
-          <Link href="/">eCom Accounting</Link>
+        <div className="text-xl font-bold tracking-wide">
+          <Link href="/">Art Boutique SG</Link>
         </div>
 
         {/* Desktop Menu */}
@@ -21,7 +21,7 @@ export default function Navbar() {
             <Link
               key={item.link}
               href={item.link}
-              className="text-gray-800 hover:text-blue-600 transition-colors"
+              className="transition-colors"
             >
               {item.text}
             </Link>
@@ -30,7 +30,7 @@ export default function Navbar() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden text-gray-700 hover:text-blue-700 focus:outline-none"
+          className="md:hidden text-dark hover:text-primary focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -60,13 +60,13 @@ export default function Navbar() {
 
       {/* Mobile Menu (Collapsible) */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 shadow-sm">
+        <div className="md:hidden  border-t  shadow-sm">
           <div className="flex flex-col space-y-2 p-4">
             {navLinks.map((item) => (
               <Link
                 key={item.link}
                 href={item.link}
-                className="text-gray-800 hover:text-blue-600 transition-colors"
+                className="text-primary hover:text-dark transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 {item.text}

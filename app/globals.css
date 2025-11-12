@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tailwindcss/utilities";
 
-
 /* ===============================
    🌐 GLOBAL VARIABLES
    =============================== */
@@ -9,25 +8,23 @@
   /* --- Base Theme (Blue & White: Default) --- */
   --background: #ffffff;
   --foreground: #1a1a1a;
-  --primary: #0d6efd;         /* Blue */
-  --secondary: #f8f9fa;       /* Light gray background */
-  --accent: #0056b3;          /* Darker blue for hover */
-  --muted: #6c757d;           /* Muted text */
+  --primary: #0d6efd;
+  --secondary: #f8f9fa;
+  --accent: #0056b3;
+  --muted: #6c757d;
   --border-color: #dee2e6;
 
   /* Text variants */
   --text-light: #6c757d;
   --text-dark: #212529;
-  --text-blue: #0d6efd;
+  --text-accent: #0d6efd;
 
   /* Background variants */
   --bg-light: #f8f9fa;
   --bg-dark: #212529;
-  --bg-blue: #e7f1ff;
+  --bg-accent: #e7f1ff;
 
-  /* Highlight (Inver@import "tailwindcss";
-@import "tailwindcss/utilities";
-t or Contract style) */
+  /* Highlight */
   --highlight-bg: var(--primary);
   --highlight-text: #ffffff;
 }
@@ -54,26 +51,41 @@ t or Contract style) */
   --secondary: #e9ecef;
 }
 
-/* --- Theme 3: Warm Neh! That makes perfect sense—what you’re seeing is very typical with Next.js static export + Tailwind + Google Fonts. The HTML is there (Navbar/Footer), but CSS isn’t applied because the CSS/Font pipeline isn’t recognized properly after the rebuild. Let’s fix this systematically.
-
-utral --- */
+/* --- Theme 3: Warm Neutral --- */
 .theme-warm {
   --background: #fcfbf7;
   --foreground: #2b2b2b;
-  --primary: #3b82f6;       /* Muted blue */
+  --primary: #3b82f6;
   --accent: #2563eb;
   --secondary: #f3f4f6;
 }
 
-/* ===============================
-   🌗 DARK MODE (optional)
-   =============================== */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #f5f5f5;
-    --secondary: #1c1c1c;
-  }
+/* --- 🌸 Theme 4: Rose Pink (for ArtBoutiqueSG) --- */
+.theme-rose {
+  --background: #fff9fb;
+  /* very soft pinkish-white */
+  --foreground: #2c1a1e;
+  /* deep brownish-pink for contrast */
+  --primary: #e75480;
+  /* medium rose pink */
+  --accent: #c73768;
+  /* darker shade for hover & emphasis */
+  --secondary: #fdeaf1;
+  /* pastel pink background */
+  --muted: #8c6b75;
+  /* soft muted text tone */
+  --border-color: #f5c9d1;
+
+  --text-light: #9a7b83;
+  --text-dark: #2c1a1e;
+  --text-accent: #e75480;
+
+  --bg-light: #fdeaf1;
+  --bg-dark: #2c1a1e;
+  --bg-accent: #ffe5ec;
+
+  --highlight-bg: #e75480;
+  --highlight-text: #fff;
 }
 
 /* ===============================
@@ -92,70 +104,36 @@ a {
   text-decoration: none;
   transition: color 0.2s ease;
 }
+
 a:hover {
   color: var(--accent);
   text-decoration: underline;
 }
 
-h1, h2, h3 {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+h1,
+h2,
+h3 {    
   color: var(--text-dark);
 }
-h1 { font-size: 2rem; padding-bottom: 0.3rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.2rem; color: var(--text-blue); }
 
-p { margin-bottom: 1rem; }
-
-/* ===============================
-   🎨 BUTTONS
-   =============================== */
-button {
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.375rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.1s ease;
+h1 {
+  font-size: 2rem;
+  padding-bottom: 0.3rem;
 }
 
-button:hover {
-  transform: translateY(-1px);
+h2 {
+  font-size: 1.5rem;
 }
 
-/* Button Types */
-button.ok {
-  background: var(--primary);
-  color: white;
-}
-button.ok:hover {
-  background: var(--accent);
+h3 {
+  font-size: 1.2rem;
+  color: var(--text-accent);
 }
 
-button.cancel {
-  background: #dee2e6;
-  color: #000;
-}
-button.cancel:hover {
-  background: #cbd3da;
+p {
+  margin-bottom: 1rem;
 }
 
-button.submit {
-  background: #007bff;
-  color: white;
-}
-button.submit:hover {
-  background: #0056b3;
-}
-
-button.success {
-  background: #198754;
-  color: white;
-}
-button.success:hover {
-  background: #157347;
-}
 
 /* ===============================
    ✨ HIGHLIGHT CLASS
@@ -170,10 +148,26 @@ button.success:hover {
 /* ===============================
    🧭 UTILITY CLASSES
    =============================== */
-.bg-light { background-color: var(--bg-light); }
-.bg-dark { background-color: var(--bg-dark); color: #fff; }
-.bg-blue { background-color: var(--bg-blue); }
+.bg-light {
+  background-color: var(--bg-light);
+}
 
-.text-light { color: var(--text-light); }
-.text-dark { color: var(--text-dark); }
-.text-blue { color: var(--text-blue); }
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.bg-accent {
+  background-color: var(--bg-accent);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+.text-accent {
+  color: var(--text-accent);
+}

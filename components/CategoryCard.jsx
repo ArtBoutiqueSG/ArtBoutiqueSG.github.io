@@ -1,0 +1,64 @@
+// components/CategoryCard.jsx
+import Link from "next/link";
+import { toSlug } from "../utils/slug";
+
+export default function CategoryCard({ category, products }) {
+  if (!products || products.length === 0) return null;
+
+  const driveURL = "https://artboutiquesg.github.io/static/img/thumbnail/";
+  const firstProduct = products[0]; // use static first product for SSG / SEO
+
+  // Highlight if the first product is a new arrival
+  const cardHighlightClass = firstProduct.newArrival
+    ? "border-2 border shadow-md hover:shadow-xl bg-accent text-primary-dark"
+    : "border border-border shadow hover:shadow-lg";
+
+  return (
+    <Link      
+      href={`/category/${toSlug(category)}`} title={`${category}`}
+      className="block transition-transform duration-300 hover:scale-105"
+      prefetch={false} // optional: skip prefetch for large catalogs
+    >
+      <div
+        className={`rounded-2xl flex flex-col h-full bg-card text-primary ${cardHighlightClass}`}
+      >
+        {/* Category Name */}
+        <h2 className="text-center">
+          {category}
+        </h2>
+
+        {/* Static image area */}
+        <div className="relative w-full overflow-hidden flex-grow pt-[100%]">
+          {firstProduct.newArrival && (
+            <div
+              className="
+                absolute top-2 left-2 z-10 bg-accent
+                text-primary text-xs px-2 py-1
+                rounded-full shadow-lg transform -rotate-3
+              "
+            >
+              ✨ NEW ARRIVAL
+            </div>
+          )}
+
+          {/* Use only first product image for SSG & SEO */}
+          <img
+            src={`/img/products/${firstProduct.image1}`}
+            alt={firstProduct.name}
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            title={firstProduct.name}
+          />
+        </div>
+
+        {/* Static info */}
+        <div className="p-3">
+          <div className="flex justify-between text-normal text-sm">
+            
+            
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+}

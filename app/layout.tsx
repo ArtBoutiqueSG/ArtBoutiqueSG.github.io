@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import FooterTrust from "@/components/FooterTrust";
 
 /* -------------------------------
@@ -22,19 +21,22 @@ const geistMono = Geist_Mono({
    🧠 SEO Metadata
 --------------------------------*/
 export const metadata: Metadata = {
-  title: "eCom Accounting | Professional Accounting & Tax Services",
+  title: "Art Boutique SG | A unique collection of specially designed, hand curated art pieces",
   description:
-    "Expert CA services for small and medium businesses: GST registration, ITR filing, bookkeeping, accounting, and business setup assistance.",
+    "ArtboutiqueSG is a unique collection of specially designed, hand curated art pieces, photo frame, resin crafts, rakhis, hand picked jewellery pieces",
   keywords: [
-    "CA services",
-    "accounting",
-    "bookkeeping",
-    "ITR filing",
-    "GST registration",
-    "business registration",
-    "tax filing",
+    "Diwali Gifts",
+"Rakhis",
+"Coasters",
+"Trays",
+"Photo Frames",
+"Keyrings",
+"Resin Clocks",
+"Gift Hampers",
+"Decor",
+"Candles"
   ],
-  authors: [{ name: "eCom Accounting" }],  
+  authors: [{ name: "Art Boutique SG" }],  
 };
 
 export const viewport: Viewport = {
@@ -54,7 +56,7 @@ export default function RootLayout({
     <html lang="en">
       {/* Theme can be swapped: theme-blue | theme-gray | theme-warm */}
       <body
-        className={`theme-blue ${geistSans.variable} ${geistMono.variable} antialiased 
+        className={`theme-rose ${geistSans.variable} ${geistMono.variable} antialiased 
                     flex flex-col min-h-screen transition-colors`}
       >
         {/* Sticky Navbar */}
@@ -68,8 +70,7 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <FooterTrust />
-        <Footer />
+        <FooterTrust />        
       </body>
     </html>
   );

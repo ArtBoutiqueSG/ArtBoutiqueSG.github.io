@@ -1,34 +1,45 @@
 {
   "blogs": [
-    {
-      "id": 1,
-      "title": "Understanding eCommerce Accounting: A Complete Guide for Online Sellers",
-      "slug": "understanding-ecommerce-accounting",
-      "date": "2025-10-15",
-      "author": "Team Ledgerly",
-      "image": "/img/blogs/1.png",
-      "excerpt": "Learn how to manage accounting for your eCommerce business — from tracking sales across multiple platforms to reconciling payment gateways efficiently.",
-      "content": "Accounting for eCommerce sellers goes beyond basic bookkeeping. With multiple marketplaces, payment gateways, and returns, maintaining accurate books requires a structured approach. Start by automating sales data imports, categorizing marketplace fees, and regularly reconciling bank statements. Cloud-based accounting tools integrated with Amazon, Flipkart, or Shopify can help you minimize manual effort while ensuring compliance."
-    },
-    {
-      "id": 2,
-      "title": "GST and Taxation for eCommerce Sellers: What You Must Know",
-      "slug": "gst-taxation-ecommerce-sellers",
-      "date": "2025-11-01",
-      "author": "CA Ananya Sharma",
-      "image": "/img/blogs/2.png",
-      "excerpt": "A simplified breakdown of GST registration, filing, and compliance for eCommerce sellers on platforms like Amazon and Flipkart.",
-      "content": "Under India’s GST framework, eCommerce sellers face unique compliance requirements. Marketplaces are required to collect TCS (Tax Collected at Source), which must be claimed by sellers in their GST returns. To stay compliant, ensure timely reconciliation of TCS credits, regular filing of GSTR-1 and GSTR-3B, and accurate mapping of outward supplies. Proper record-keeping also helps avoid penalties and eases annual return filing."
-    },
-    {
-      "id": 3,
-      "title": "Marketplace Reconciliation Made Simple: Avoid Revenue Leakage",
-      "slug": "marketplace-reconciliation-made-simple",
-      "date": "2025-11-08",
-      "author": "Rohan Patel",
-      "image": "/img/blogs/3.png",
-      "excerpt": "Discover how automated reconciliation can help eCommerce businesses recover lost revenue and ensure accurate reporting.",
-      "content": "Marketplace reconciliation ensures that your sales, returns, and commissions reported by platforms like Amazon or Meesho match your own records. Discrepancies often arise due to delayed settlements, unaccounted returns, or incorrect commission charges. By using reconciliation software or structured Excel checks, you can detect mismatches early, claim missing payments, and maintain trust in your financial data."
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Transforming Gift Ideas into Reality: Behind the Art of Handcrafted Hampers",
+    "slug": "transforming-gift-ideas-into-reality",
+    "date": "2025-09-20",
+    "author": "Team The Beadery Co.",
+    "image": "/img/blogs/1.png",
+    "excerpt": "Ever wondered what goes into curating a personalized gift hamper? Discover how creative collaboration and attention to detail turn simple ideas into beautiful handcrafted realities.",
+    "content": "Each handcrafted gift hamper starts with a story — an idea that captures emotion, color, and personality. From selecting the theme and sourcing coordinated decor elements to hand-arranging every piece, our process is a true collaboration between imagination and craftsmanship. Whether it’s a blue-themed gift box or a festival special, we blend aesthetics with purpose to create something truly personal and memorable."
+  },
+  {
+    "id": 2,
+    "title": "Illuminate Your Festive Spaces with Handmade Candles and Decor",
+    "slug": "illuminate-your-festive-spaces",
+    "date": "2025-10-05",
+    "author": "Team The Beadery Co.",
+    "image": "/img/blogs/2.png",
+    "excerpt": "Handmade candles and resin decor are redefining festive luxury. Learn how to bring warmth, color, and a personal touch to your Diwali decorations.",
+    "content": "Festivals are not just about light — they’re about feeling. Our handmade Lotus Theme Jar Candles and tea-light holders combine fragrance, craftsmanship, and sacred symbolism to create radiant spaces. Each piece is poured, polished, and finished by hand, ensuring that no two are identical. Illuminate your home with elegance and invite positivity this festive season with decor that tells a story of devotion and artistry."
+  },
+  {
+    "id": 3,
+    "title": "The Charm of Resin Art: Coasters, Platters, and Beyond",
+    "slug": "the-charm-of-resin-art",
+    "date": "2025-09-28",
+    "author": "Team The Beadery Co.",
+    "image": "/img/blogs/3.png",
+    "excerpt": "Resin art brings a luxurious, contemporary touch to everyday items. Explore how our coasters and pooja platters are transforming home decor aesthetics.",
+    "content": "Resin art is where creativity meets chemistry. By blending pigments, metallics, and textures, we craft coasters and platters that double as art pieces. Our black-and-gold coaster sets exude bold elegance, while our resin pooja platters infuse devotion with design. Each product is hand-poured and cured with care, making every item a one-of-a-kind masterpiece that adds sophistication to your living space."
+  },
+  {
+    "id": 4,
+    "title": "Thoughtful Gifting Made Easy: The Rise of Personalized Handcrafted Gifts",
+    "slug": "thoughtful-gifting-made-easy",
+    "date": "2025-10-25",
+    "author": "Team The Beadery Co.",
+    "image": "/img/blogs/4.png",
+    "excerpt": "Move beyond generic gifts. Discover why handcrafted and personalized presents create deeper connections and lasting impressions.",
+    "content": "In an age of quick clicks and instant buys, handcrafted gifts stand out because they speak from the heart. Personalized hampers, themed candles, and photo frames capture the essence of relationships — effort, intention, and care. Our artisans handcraft each piece to mirror the giver’s thoughtfulness and the receiver’s joy. With every gift, you’re not just giving an object — you’re sharing a story."
+  }
+]
+
 }

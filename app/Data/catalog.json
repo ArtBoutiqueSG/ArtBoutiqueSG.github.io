@@ -3,7 +3,7 @@
         {
             "text": "Home",
             "link": "/"
-        },        
+        },
         {
             "text": "About Us",
             "link": "/about"
@@ -17,163 +17,178 @@
             "link": "/blogs"
         }
     ],
-    "services": [
-        {
-            "name": "GST Registration & Filing",
-            "text": "Complete GST registration process and monthly/quarterly filing for eCommerce sellers",
-            "highlights": [
-                "GST Registration",
-                "Monthly Returns",
-                "Input Tax Credit",
-                "Compliance Management"
-            ]
-        },
-        {
-            "name": "Bookkeeping & Accounting",
-            "text": "Professional bookkeeping services tailored for online marketplace sellers",
-            "highlights": [
-                "Daily Transactions",
-                "Bank Reconciliation",
-                "Financial Statements",
-                "Expense Tracking"
-            ]
-        },
-        {
-            "name": "Income Tax Returns",
-            "text": "Expert preparation and filing of income tax returns for individuals and businesses",
-            "highlights": [
-                "ITR Filing",
-                "Tax Planning",
-                "Advance Tax",
-                "TDS Returns"
-            ]
-        },
-        {
-            "name": "Marketplace Reconciliation",
-            "text": "Detailed reconciliation of sales data from Amazon, Flipkart, and other platforms",
-            "highlights": [
-                "Sales Reconciliation",
-                "Fee Analysis",
-                "Settlement Reports",
-                "Inventory Tracking"
-            ]
-        },
-        {
-            "name": "Payment Gateway Integration",
-            "text": "Setup and management of payment gateways with proper accounting integration",
-            "highlights": [
-                "Gateway Setup",
-                "Transaction Tracking",
-                "Settlement Analysis",
-                "Dispute Management"
-            ]
-        },
-        {
-            "name": "Business Registration",
-            "text": "Complete business setup including company registration and licensing",
-            "highlights": [
-                "Company Registration",
-                "Partnership Deeds",
-                "Trade Licenses",
-                "FSSAI Registration"
-            ]
-        },
-        {
-            "name": "Small Business",
-            "text": "",
-            "highlights": [
-                "Taxation",
-                "Business Consulting",
-                "Financial Consulting",
-                "Tax Preparation",
-                "Financial Analysis"
-            ]
-        }
-    ],
     "banners": [
         {
-            "heading": "Focus on Sales — We’ll Do the Books",
-            "text": "Focus on growing your online business while we handle your books, taxes, and compliance. Specialized services for Amazon, Flipkart, and other marketplace sellers.",
+            "heading": "Your Idea, Our Craft — The Perfect Handcrafted Gift Awaits",
+            "text": "We designed this custom blue-themed gift hamper — a charming, budget-friendly expression of love and celebration. Each hamper is thoughtfully curated, handcrafted with care, and tailored to your chosen theme or occasion.",
             "highlights": [
-                "GST Registration & Filing",
-                "Marketplace Reconciliation",
-                "Income Tax Returns",
-                "Business Registration"
+                "Customizable themes — from color palette to contents",
+                "Perfect for birthdays, anniversaries, and festive gifting",
+                "Handcrafted details that make every piece unique",
+                "Budget-friendly yet aesthetic and premium",
+                "Collaborations welcome — we love turning your ideas into reality"
             ],
-            "image": "/img/ecom-banner.png"
+            "image": "/img/products/pgh1.png"
         },
         {
-            "heading": "✨ We are hiring!",
-            "text": "GPMJ & Associates, Indore, is looking for CA Interns to join our team. If you know someone who might be a good fit, your referrals would be highly appreciated.",
+            "heading": "Celebrate Every Moment with Handcrafted Elegance",
+            "text": "Each piece is uniquely designed with vibrant colors, intricate patterns, and a divine artistic finish — making it a perfect choice for gifting or personal décor.",
             "highlights": [
-                "Join us as Article Assistants",
-                "Get hands-on exposure",
-                "Audit assignments across diverse industries",
-                "Direct taxation and GST compliance",
-                "Duration: Articleship as per ICAI requirements"
+                "Perfect for return gifts and festive celebrations",
+                "Crafted with premium resin and artistic precision",
+                "Showcases vibrant colors and intricate detailing",
+                "Adds a touch of luxury to every space",
+                "Eco-friendly, elegant, and long-lasting finish"
             ],
-            "image": "/img/werhiring1.png"
+            "image": "/img/products/pf1.png"
         }
     ],
-    "OurTeam": [
-        {
-            "memberName": "Arpit Paliwal",
-            "description": "CA Arpit Paliwal, Partner at GPMJ & Associates, brings 14+ years of expertise in auditing, taxation, and startup advisory. He helps businesses scale through financial structuring, compliance, and strategic consulting.",
-            "image": "/img/ot/arpit.png"
-        },
-        {
-            "memberName": "Deepak Parekh",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
-            "image": "/img/ot/tm1.png"
-        },
-        {
-            "memberName": "Nirmala Sitharaman",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
-            "image": "/img/ot/tm2.png"
-        }
-    ],
-    "clients": [
+    "products": [
         {
             "id": 1,
-            "name": "TechKart Solutions",
-            "industry": "eCommerce SaaS",
-            "logo": "/img/clients/c1.png",
-            "description": "Partnered for GST compliance, bookkeeping, and business registration."
+            "name": "Personalized Gift Hamper in blue theme",
+            "description": "Happy to collab with @the.beadery.co and sent out this pretty gift hamper!\n\nThe request was to curate everything in blue and this is what I and @the.beadery.co put together as a very budget friendly gift hamper!\n\nDM for more enquiry on such orders and we will be happy to bring your idea into a beautiful reality!",
+            "image1": "pgh1.png",
+            "image2": "pgh2.png",
+            "image3": "pgh3.png",
+            "category": "Gift Hampers"
         },
         {
             "id": 2,
-            "name": "Urban Threads",
-            "industry": "Fashion Retail",
-            "logo": "/img/clients/c2.png",
-            "description": "Handled complete marketplace reconciliation and tax compliance."
+            "name": "Budget friendly gift hamper",
+            "description": "",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "category": ""
         },
         {
             "id": 3,
-            "name": "FitFuel Nutrition",
-            "industry": "Health & Nutrition",
-            "logo": "/img/clients/c3.png",
-            "description": "Supported with financial structuring, accounting, and GST management."
+            "name": "Diwali Decor",
+            "description": "This Diwali Decor your dining table with this tier tray… very tastefully designed in elegant ivory and gold combination. Comes with ani grip cushions at bottom and edges are slightly elevated with stone to avoid any slips.",
+            "image1": "dd1.png",
+            "image2": "dd2.png",
+            "image3": "dd3.png",
+            "category": "Decor"
         },
         {
             "id": 4,
-            "name": "ClickMart",
-            "industry": "Online Marketplace",
-            "logo": "/img/clients/c4.png",
-            "description": "End-to-end accounting and compliance solutions for multi-channel sales."
+            "name": "Lotus Theme Jar Candles",
+            "description": "Launching Handmade Lotus Theme Jar Candles ✨\nIlluminate your space with these elegant vanilla-scented candles, crafted with love! Featuring delicate lotus designs, these tiny treasures are perfect as Diwali door or for any special occasion.",
+            "image1": "ltjc1.png",
+            "image2": "ltjc2.png",
+            "image3": "ltjc3.png",
+            "category": "Candles"
         },
         {
             "id": 5,
-            "name": "Craftopia",
-            "industry": "Artisan Goods",
-            "logo": "/img/clients/c5.png",
-            "description": "Optimized tax filing and bookkeeping for a handmade goods startup."
+            "name": "tea light holders",
+            "description": "Lotus and Aura - our hot selling tea light holders this season.",
+            "image1": "tlh.png",
+            "image2": "",
+            "image3": "",
+            "category": "Diwali Gifts"
         },
         {
             "id": 6,
-            "name": "NeoPrint Media",
-            "industry": "Digital Marketing",
-            "logo": "/img/clients/c6.png",
-            "description": "Advised on company registration, invoicing automation, and tax filing."
+            "name": "Lotus Tea Light Holders",
+            "description": "This Diwali light up your house with these stunning Lotus Tea Light Holders! 🌸 The lotus, a sacred symbol of purity and prosperity, holds deep significance for Goddess Lakshmi. Illuminate your home with their radiant glow and invite divine blessings this festive season. Perfect for creating a devine ambiance!",
+            "image1": "ltlh1.png",
+            "image2": "ltlh2.png",
+            "image3": "ltlh3.png",
+            "category": "Diwali Gifts"
+        },
+        {
+            "id": 7,
+            "name": "black and gold coaster set",
+            "description": "Just one pic is enough to define this bold and classy coaster set! They are designed in black and gold for a reason! ☺️they go perfectly well with your urban living room! Grab this Set of four coaster and cover before they are off the shelf! This are limited edition.",
+            "image1": "bgcs.png",
+            "image2": "",
+            "image3": "",
+            "category": "Coasters"
+        },
+        {
+            "id": 8,
+            "name": "pooja platters",
+            "description": "Elevate your daily and special rituals with our one-of-a-kind handmade resin pooja platters! Handcrafted with love, each piece bursts with vibrant hues—from serene blues to fiery reds—and comes complete with a tilak stick for that authentic touch. Available in a variety of sizes and price points to suit every sacred space. Perfect for adding a pop of color and devotion to your temple.",
+            "image1": "pp1.png",
+            "image2": "pp2.png",
+            "image3": "pp3.png",
+            "category": "Trays"
+        },
+        {
+            "id": 9,
+            "name": "Rakhi",
+            "description": "",
+            "image1": "r1.png",
+            "image2": "",
+            "image3": "",
+            "category": "Rakhis"
+        },
+        {
+            "id": 10,
+            "name": "Phtoto Frame",
+            "description": "Nothing better than preserving bro-sis bonding! I am sure this pretty frame will surprise the siblings. Happy Rakshabandhan Kiddoos",
+            "image1": "pf1.png",
+            "image2": "pf2.png",
+            "image3": "pf2png",
+            "category": "Photo Frames"
         }
-    ]
+    ],"categories": [
+    {
+      "id": 1,
+      "name": "Best sellers",
+      "rank": 1
+    },
+    {
+      "id": 2,
+      "name": "Diwali Gifts",
+      "rank": 2
+    },
+    {
+      "id": 3,
+      "name": "Rakhis",
+      "rank": 3
+    },
+    {
+      "id": 4,
+      "name": "Coasters",
+      "rank": 4
+    },
+    {
+      "id": 5,
+      "name": "Trays",
+      "rank": 5
+    },
+    {
+      "id": 6,
+      "name": "Photo Frames",
+      "rank": 6
+    },
+    {
+      "id": 7,
+      "name": "Keyrings",
+      "rank": 7
+    },
+    {
+      "id": 8,
+      "name": "Resin Clocks",
+      "rank": 8
+    },
+    {
+      "id": 9,
+      "name": "Gift Hampers",
+      "rank": 9
+    },
+    {
+      "id": 10,
+      "name": "Decor",
+      "rank": 10
+    },
+    {
+      "id": 11,
+      "name": "Candles",
+      "rank": 11
+    }
+  ]
 }

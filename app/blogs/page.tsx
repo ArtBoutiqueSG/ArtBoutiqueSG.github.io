@@ -14,16 +14,15 @@ interface Blog {
 }
 
 export const metadata: Metadata = {
-  title: "Blogs | Insights on eCommerce Accounting, GST & Compliance",
+  title: "Blogs | Handcrafted Art, Resin Stories & Design Inspiration",
   description:
-    "Explore expert blogs from GPMJ & Associates on accounting, GST, reconciliation, and financial best practices for eCommerce sellers in India.",
+    "Discover creative stories, artist insights, and design inspiration from our handcrafted resin art studio — where ideas turn into elegant keepsakes.",
   keywords: [
-    "eCommerce accounting",
-    "GST compliance",
-    "CA blog",
-    "online seller finance",
-    "tax filing",
-    "bookkeeping",
+    "resin art blog",
+    "handcrafted decor ideas",
+    "artistic stories",
+    "creative design inspiration",
+    "resin artist Sheetal Jain",
   ],
 };
 
@@ -33,18 +32,18 @@ export default function BlogsPage() {
   return (
     <section
       id="blogs"
-      className="bg-gray-50 py-20"
-      aria-label="Blog articles on eCommerce accounting and taxation"
+      className="py-20 bg-light"
+      aria-label="Blog articles and stories on handcrafted art and resin design"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-4 md:px-8">
         {/* --- Page Header --- */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">
-            Our Blog
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            From Our Studio
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Stay informed with insights and expert articles on accounting, GST,
-            and compliance for eCommerce sellers.
+          <p className="text-secondary text-lg max-w-2xl mx-auto">
+            Explore stories, inspiration, and behind-the-scenes glimpses into the world
+            of handcrafted resin art by our artist, Sheetal Jain.
           </p>
         </div>
 
@@ -71,13 +70,14 @@ export default function BlogsPage() {
               {/* --- Blog Content --- */}
               <div className="p-6 flex flex-col flex-grow">
                 <h2
-                  className="text-2xl font-semibold text-blue-700 mb-2"
+                  className="text-xl font-semibold text-dark mb-2"
                   itemProp="headline"
                 >
                   {blog.title}
                 </h2>
+
                 <p
-                  className="text-gray-500 text-sm mb-4"
+                  className="text-muted text-sm mb-4"
                   itemProp="author"
                   itemScope
                   itemType="https://schema.org/Person"
@@ -93,7 +93,7 @@ export default function BlogsPage() {
                 </p>
 
                 <p
-                  className="text-gray-700 text-base leading-relaxed mb-6 flex-grow"
+                  className="text-secondary text-base leading-relaxed mb-6 flex-grow"
                   itemProp="description"
                 >
                   {blog.excerpt}
@@ -101,7 +101,7 @@ export default function BlogsPage() {
 
                 <Link
                   href={`/blogs/${blog.slug}`}
-                  className="inline-block  py-2 px-5 rounded-lg self-start transition-colors"
+                  className="inline-block border border-accent text-accent hover:bg-accent hover:text-primary py-2 px-5 rounded-lg self-start transition-colors"
                 >
                   View More →
                 </Link>
