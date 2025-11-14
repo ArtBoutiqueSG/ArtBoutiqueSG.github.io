@@ -23,3 +23,7 @@ export interface Blog {
   image: string;
   excerpt: string;
 }
+export type VideoItem={
+  category:string;
+  gumletUrl:string;
+}

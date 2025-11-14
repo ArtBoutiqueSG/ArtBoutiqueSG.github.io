@@ -1,11 +1,12 @@
 import Banner from "@/components/Banner";
 import CategoryCard from "@/components/CategoryCard";
+import VideoFeedGallery from "@/components/VideoFeedGallery";
 import data from "@/app/Data/catalog.json";
 import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  
+
   title: "Art Boutique SG | Handcrafted Resin Gifts & Home Decor",
   description:
     "Discover handcrafted resin gifts, personalized hampers, and custom decor made with artistic precision at Art Boutique SG. Each piece is designed to bring beauty, emotion, and individuality to your space.",
@@ -91,6 +92,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <VideoFeedGallery />
       {/* --- Closing CTA --- */}
       <section className="bg-accent/10 py-12 md:py-16 text-center rounded-t-3xl">
         <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-4">

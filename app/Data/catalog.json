@@ -1,150 +1,151 @@
 {
-    "navLinks": [
-        {
-            "text": "Home",
-            "link": "/"
-        },
-        {
-            "text": "About Us",
-            "link": "/about"
-        },
-        {
-            "text": "Contact Us",
-            "link": "/contact-us"
-        },
-        {
-            "text": "Blogs",
-            "link": "/blogs"
-        }
-    ],
-    "banners": [
-        {
-            "heading": "Your Idea, Our Craft — The Perfect Handcrafted Gift Awaits",
-            "text": "We designed this custom blue-themed gift hamper — a charming, budget-friendly expression of love and celebration. Each hamper is thoughtfully curated, handcrafted with care, and tailored to your chosen theme or occasion.",
-            "highlights": [
-                "Customizable themes — from color palette to contents",
-                "Perfect for birthdays, anniversaries, and festive gifting",
-                "Handcrafted details that make every piece unique",
-                "Budget-friendly yet aesthetic and premium",
-                "Collaborations welcome — we love turning your ideas into reality"
-            ],
-            "image": "/img/products/pgh1.png"
-        },
-        {
-            "heading": "Celebrate Every Moment with Handcrafted Elegance",
-            "text": "Each piece is uniquely designed with vibrant colors, intricate patterns, and a divine artistic finish — making it a perfect choice for gifting or personal décor.",
-            "highlights": [
-                "Perfect for return gifts and festive celebrations",
-                "Crafted with premium resin and artistic precision",
-                "Showcases vibrant colors and intricate detailing",
-                "Adds a touch of luxury to every space",
-                "Eco-friendly, elegant, and long-lasting finish"
-            ],
-            "image": "/img/products/pf1.png"
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "name": "Personalized Gift Hamper in blue theme",
-            "description": "Happy to collab with @the.beadery.co and sent out this pretty gift hamper!\n\nThe request was to curate everything in blue and this is what I and @the.beadery.co put together as a very budget friendly gift hamper!\n\nDM for more enquiry on such orders and we will be happy to bring your idea into a beautiful reality!",
-            "image1": "pgh1.png",
-            "image2": "pgh2.png",
-            "image3": "pgh3.png",
-            "category": "Gift Hampers",
-            "newArrival":false
-        },
-        {
-            "id": 2,
-            "name": "Budget friendly gift hamper",
-            "description": "",
-            "image1": "",
-            "image2": "",
-            "image3": "",
-            "category": "",
-            "newArrival":false
-        },
-        {
-            "id": 3,
-            "name": "Diwali Decor",
-            "description": "This Diwali Decor your dining table with this tier tray… very tastefully designed in elegant ivory and gold combination. Comes with ani grip cushions at bottom and edges are slightly elevated with stone to avoid any slips.",
-            "image1": "dd1.png",
-            "image2": "dd2.png",
-            "image3": "dd3.png",
-            "category": "Decor",
-            "newArrival":false
-        },
-        {
-            "id": 4,
-            "name": "Lotus Theme Jar Candles",
-            "description": "Launching Handmade Lotus Theme Jar Candles ✨\nIlluminate your space with these elegant vanilla-scented candles, crafted with love! Featuring delicate lotus designs, these tiny treasures are perfect as Diwali door or for any special occasion.",
-            "image1": "ltjc1.png",
-            "image2": "ltjc2.png",
-            "image3": "ltjc3.png",
-            "category": "Candles",
-            "newArrival":false
-        },
-        {
-            "id": 5,
-            "name": "Tea light holders",
-            "description": "Lotus and Aura - our hot selling tea light holders this season.",
-            "image1": "tlh.png",
-            "image2": "",
-            "image3": "",
-            "category": "Diwali Gifts",
-            "newArrival":true
-        },
-        {
-            "id": 6,
-            "name": "Lotus Tea Light Holders",
-            "description": "This Diwali light up your house with these stunning Lotus Tea Light Holders! 🌸 The lotus, a sacred symbol of purity and prosperity, holds deep significance for Goddess Lakshmi. Illuminate your home with their radiant glow and invite divine blessings this festive season. Perfect for creating a devine ambiance!",
-            "image1": "ltlh1.png",
-            "image2": "ltlh2.png",
-            "image3": "ltlh3.png",
-            "category": "Diwali Gifts",
-            "newArrival":false
-        },
-        {
-            "id": 7,
-            "name": "Black and gold coaster set",
-            "description": "Just one pic is enough to define this bold and classy coaster set! They are designed in black and gold for a reason! ☺️they go perfectly well with your urban living room! Grab this Set of four coaster and cover before they are off the shelf! This are limited edition.",
-            "image1": "bgcs.png",
-            "image2": "",
-            "image3": "",
-            "category": "Coasters",
-            "newArrival":false
-        },
-        {
-            "id": 8,
-            "name": "Pooja platters",
-            "description": "Elevate your daily and special rituals with our one-of-a-kind handmade resin pooja platters! Handcrafted with love, each piece bursts with vibrant hues—from serene blues to fiery reds—and comes complete with a tilak stick for that authentic touch. Available in a variety of sizes and price points to suit every sacred space. Perfect for adding a pop of color and devotion to your temple.",
-            "image1": "pp1.png",
-            "image2": "pp2.png",
-            "image3": "pp3.png",
-            "category": "Trays",
-            "newArrival":false
-        },
-        {
-            "id": 9,
-            "name": "Rakhi",
-            "description": "",
-            "image1": "r1.png",
-            "image2": "",
-            "image3": "",
-            "category": "Rakhis",
-            "newArrival":false
-        },
-        {
-            "id": 10,
-            "name": "Phtoto Frame",
-            "description": "Nothing better than preserving bro-sis bonding! I am sure this pretty frame will surprise the siblings. Happy Rakshabandhan Kiddoos",
-            "image1": "pf1.png",
-            "image2": "pf2.png",
-            "image3": "pf2png",
-            "category": "Photo Frames",
-            "newArrival":false
-        }
-    ],"categories": [
+  "navLinks": [
+    {
+      "text": "Home",
+      "link": "/"
+    },
+    {
+      "text": "About Us",
+      "link": "/about"
+    },
+    {
+      "text": "Contact Us",
+      "link": "/contact-us"
+    },
+    {
+      "text": "Blogs",
+      "link": "/blogs"
+    }
+  ],
+  "banners": [
+    {
+      "heading": "Your Idea, Our Craft — The Perfect Handcrafted Gift Awaits",
+      "text": "We designed this custom blue-themed gift hamper — a charming, budget-friendly expression of love and celebration. Each hamper is thoughtfully curated, handcrafted with care, and tailored to your chosen theme or occasion.",
+      "highlights": [
+        "Customizable themes — from color palette to contents",
+        "Perfect for birthdays, anniversaries, and festive gifting",
+        "Handcrafted details that make every piece unique",
+        "Budget-friendly yet aesthetic and premium",
+        "Collaborations welcome — we love turning your ideas into reality"
+      ],
+      "image": "/img/products/pgh1.png"
+    },
+    {
+      "heading": "Celebrate Every Moment with Handcrafted Elegance",
+      "text": "Each piece is uniquely designed with vibrant colors, intricate patterns, and a divine artistic finish — making it a perfect choice for gifting or personal décor.",
+      "highlights": [
+        "Perfect for return gifts and festive celebrations",
+        "Crafted with premium resin and artistic precision",
+        "Showcases vibrant colors and intricate detailing",
+        "Adds a touch of luxury to every space",
+        "Eco-friendly, elegant, and long-lasting finish"
+      ],
+      "image": "/img/products/pf1.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Personalized Gift Hamper in blue theme",
+      "description": "Happy to collab with @the.beadery.co and sent out this pretty gift hamper!\n\nThe request was to curate everything in blue and this is what I and @the.beadery.co put together as a very budget friendly gift hamper!\n\nDM for more enquiry on such orders and we will be happy to bring your idea into a beautiful reality!",
+      "image1": "pgh1.png",
+      "image2": "pgh2.png",
+      "image3": "pgh3.png",
+      "category": "Gift Hampers",
+      "newArrival": false
+    },
+    {
+      "id": 2,
+      "name": "Budget friendly gift hamper",
+      "description": "",
+      "image1": "",
+      "image2": "",
+      "image3": "",
+      "category": "",
+      "newArrival": false
+    },
+    {
+      "id": 3,
+      "name": "Diwali Decor",
+      "description": "This Diwali Decor your dining table with this tier tray… very tastefully designed in elegant ivory and gold combination. Comes with ani grip cushions at bottom and edges are slightly elevated with stone to avoid any slips.",
+      "image1": "dd1.png",
+      "image2": "dd2.png",
+      "image3": "dd3.png",
+      "category": "Decor",
+      "newArrival": false
+    },
+    {
+      "id": 4,
+      "name": "Lotus Theme Jar Candles",
+      "description": "Launching Handmade Lotus Theme Jar Candles ✨\nIlluminate your space with these elegant vanilla-scented candles, crafted with love! Featuring delicate lotus designs, these tiny treasures are perfect as Diwali door or for any special occasion.",
+      "image1": "ltjc1.png",
+      "image2": "ltjc2.png",
+      "image3": "ltjc3.png",
+      "category": "Candles",
+      "newArrival": false
+    },
+    {
+      "id": 5,
+      "name": "Tea light holders",
+      "description": "Lotus and Aura - our hot selling tea light holders this season.",
+      "image1": "tlh.png",
+      "image2": "",
+      "image3": "",
+      "category": "Diwali Gifts",
+      "newArrival": true
+    },
+    {
+      "id": 6,
+      "name": "Lotus Tea Light Holders",
+      "description": "This Diwali light up your house with these stunning Lotus Tea Light Holders! 🌸 The lotus, a sacred symbol of purity and prosperity, holds deep significance for Goddess Lakshmi. Illuminate your home with their radiant glow and invite divine blessings this festive season. Perfect for creating a devine ambiance!",
+      "image1": "ltlh1.png",
+      "image2": "ltlh2.png",
+      "image3": "ltlh3.png",
+      "category": "Diwali Gifts",
+      "newArrival": false
+    },
+    {
+      "id": 7,
+      "name": "Black and gold coaster set",
+      "description": "Just one pic is enough to define this bold and classy coaster set! They are designed in black and gold for a reason! ☺️they go perfectly well with your urban living room! Grab this Set of four coaster and cover before they are off the shelf! This are limited edition.",
+      "image1": "bgcs.png",
+      "image2": "",
+      "image3": "",
+      "category": "Coasters",
+      "newArrival": false
+    },
+    {
+      "id": 8,
+      "name": "Pooja platters",
+      "description": "Elevate your daily and special rituals with our one-of-a-kind handmade resin pooja platters! Handcrafted with love, each piece bursts with vibrant hues—from serene blues to fiery reds—and comes complete with a tilak stick for that authentic touch. Available in a variety of sizes and price points to suit every sacred space. Perfect for adding a pop of color and devotion to your temple.",
+      "image1": "pp1.png",
+      "image2": "pp2.png",
+      "image3": "pp3.png",
+      "category": "Trays",
+      "newArrival": false
+    },
+    {
+      "id": 9,
+      "name": "Rakhi",
+      "description": "",
+      "image1": "r1.png",
+      "image2": "",
+      "image3": "",
+      "category": "Rakhis",
+      "newArrival": false
+    },
+    {
+      "id": 10,
+      "name": "Phtoto Frame",
+      "description": "Nothing better than preserving bro-sis bonding! I am sure this pretty frame will surprise the siblings. Happy Rakshabandhan Kiddoos",
+      "image1": "pf1.png",
+      "image2": "pf2.png",
+      "image3": "pf2png",
+      "category": "Photo Frames",
+      "newArrival": false
+    }
+  ],
+  "categories": [
     {
       "id": 1,
       "name": "Best sellers",
@@ -200,5 +201,24 @@
       "name": "Candles",
       "rank": 11
     }
+  ],
+  "videoFeed": [
+    {
+      "category": "Gift Hampers",
+      "gumletUrl": "https://dash.gumlet.com/video/manage/collection/691535279152d1a63ffe3773/asset/691697874f0f4603337f4e6e"
+    },
+    {
+      "category": "Candels",
+      "gumletUrl": "https://dash.gumlet.com/video/manage/collection/691535279152d1a63ffe3773/asset/691697874f0f4603337f4e75"
+    },
+    {
+      "category": "Photo Frames",
+      "gumletUrl": "https://dash.gumlet.com/video/manage/collection/691535279152d1a63ffe3773/asset/691697868490a319acc0fb9d"
+    },
+    {
+      "category": "Trays",
+      "gumletUrl": "https://dash.gumlet.com/video/manage/collection/691535279152d1a63ffe3773/asset/69169786df9720847e022dfc"
+    }
+    
   ]
 }
