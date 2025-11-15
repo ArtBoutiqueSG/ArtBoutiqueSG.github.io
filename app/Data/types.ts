@@ -27,3 +27,15 @@ export type VideoItem={
   category:string;
   gumletUrl:string;
 }
+
+// 1. Types
+export interface GumletURLs {
+  thumbnailUrl: string;
+  playbackUrl: string;
+}
+
+export interface GumletItem {
+  Category: string;
+  gumlet: GumletURLs;
+}
+
