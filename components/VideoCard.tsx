@@ -89,7 +89,7 @@ export default function VideoCard({ item }: { item: GumletItem }) {
                 {/* Thumbnail */}
                 <img
                     src={item.gumlet.thumbnailUrl}
-                    alt={item.gumlet.title}
+                    alt={item.Category}
                     className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300
         ${videoVisible ? "opacity-0" : "opacity-100"}`}
                 />
