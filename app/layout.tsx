@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import FooterTrust from "@/components/FooterTrust";
+import Script from "next/script";
 
 /* -------------------------------
    🧩 Font Setup
@@ -27,17 +28,17 @@ export const metadata: Metadata = {
     "ArtboutiqueSG is a unique collection of specially designed, hand curated art pieces, photo frame, resin crafts, rakhis, hand picked jewellery pieces",
   keywords: [
     "Diwali Gifts",
-"Rakhis",
-"Coasters",
-"Trays",
-"Photo Frames",
-"Keyrings",
-"Resin Clocks",
-"Gift Hampers",
-"Decor",
-"Candles"
+    "Rakhis",
+    "Coasters",
+    "Trays",
+    "Photo Frames",
+    "Keyrings",
+    "Resin Clocks",
+    "Gift Hampers",
+    "Decor",
+    "Candles"
   ],
-  authors: [{ name: "Art Boutique SG" }],  
+  authors: [{ name: "Art Boutique SG" }],
 };
 
 export const viewport: Viewport = {
@@ -71,8 +72,17 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <FooterTrust />        
+        <FooterTrust />
+        <a id="powered-by-mehtalogy"
+          href="https://mehtalogy.in"
+          target="_blank" title="Powered by Mehtalogy LABS">
+          Mehtalogy LABS
+        </a>
+
+        <Script src="https://mehtalogy.in/pb/v1.js"
+          strategy="afterInteractive" />
+
       </body>
-    </html>
+    </html >
   );
 }

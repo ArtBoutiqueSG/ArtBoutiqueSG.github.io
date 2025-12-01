@@ -63,7 +63,7 @@ export default function FooterTrust() {
   return (
     <footer
       ref={footerRef}
-      className="bg-dark text-light py-16 px-6 md:px-12 text-center md:text-left"
+      className="bg-dark text-light  p-6  text-center md:text-left"
       aria-label="Firm achievements and client trust metrics"
     >
       <div className="container mx-auto">
@@ -82,8 +82,7 @@ export default function FooterTrust() {
         </div>
 
         <div className="mt-10 text-sm flex-col
-        flex items-center justify-center">
-          <PoweredBy />
+        flex items-center justify-center">          
           <p className="text-muted items-center justify-center">
             © 2025 Art Boutique SG All — Rights Reserved.
           </p></div>
