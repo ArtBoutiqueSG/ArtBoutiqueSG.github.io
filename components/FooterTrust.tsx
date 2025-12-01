@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import PoweredBy from "@/components/PoweredBy"
 
 interface Stat {
   label: string;
@@ -10,7 +11,7 @@ interface Stat {
 const stats: Stat[] = [
   { label: "Happy Clients", value: 500, suffix: "+" },
   { label: "Years Experience", value: 5, suffix: "+" },
-  { label: "Success Rate", value: 99, suffix: "%" },  
+  { label: "Success Rate", value: 99, suffix: "%" },
   { label: "Client Rating", value: 4.9, suffix: "" },
 ];
 
@@ -80,9 +81,12 @@ export default function FooterTrust() {
           ))}
         </div>
 
-        <div className="mt-10 text-sm text-blue-100 text-center">
-          © 2025 Art Boutique SG | A unique collection of specially designed, hand curated art pieces. All Rights Reserved.
-        </div>
+        <div className="mt-10 text-sm flex-col
+        flex items-center justify-center">
+          <PoweredBy />
+          <p className="text-muted items-center justify-center">
+            © 2025 Art Boutique SG All — Rights Reserved.
+          </p></div>
       </div>
     </footer>
   );
