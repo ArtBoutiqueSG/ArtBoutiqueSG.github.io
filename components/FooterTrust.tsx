@@ -1,7 +1,5 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import PoweredBy from "@/components/PoweredBy"
-
 interface Stat {
   label: string;
   value: number;
